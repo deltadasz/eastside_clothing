@@ -9,11 +9,15 @@ import { CategoriesProvider } from './contexts/categories.context';
 import { CartProvider } from './contexts/cart.context';
 import {Elements} from '@stripe/react-stripe-js';
 import { stripePromise } from './utils/firebase/stripe/stripe.utils';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+  <Provider store={store}>
+  <BrowserRouter>
     <UserProvider>
       <CategoriesProvider>
         <CartProvider>
@@ -24,6 +28,7 @@ root.render(
       </CategoriesProvider>
     </UserProvider>
     </BrowserRouter>
+  </Provider>
   </React.StrictMode>
 );
 
