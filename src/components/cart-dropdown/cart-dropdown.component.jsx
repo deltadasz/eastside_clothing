@@ -5,6 +5,7 @@ import { selectCartItems } from '../../store/cart/cart.selector';
 import Button from '../button/button.component';
 import CartItem from '../cart-item/cart-item.component';
 
+
 import {
   CartDropdownContainer,
   EmptyMessage,
@@ -18,6 +19,9 @@ const CartDropdown = () => {
   const goToCheckoutHandler = () => {
     navigate('/checkout');
   };
+  
+  
+  
 
   return (
     <CartDropdownContainer>
