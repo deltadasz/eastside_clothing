@@ -1,25 +1,34 @@
-import {initializeApp} from 'firebase/app';
-import {getAuth,
-       signInWithRedirect, 
-       signInWithPopup,
-       GoogleAuthProvider, 
-       createUserWithEmailAndPassword, 
-       signInWithEmailAndPassword, 
-       signOut,
-       onAuthStateChanged
-    } from 'firebase/auth';
-import {getFirestore, doc, getDoc, setDoc, collection, writeBatch, query, getDocs } from 'firebase/firestore';
-
+import { initializeApp } from 'firebase/app';
+import {
+  getAuth,
+  signInWithRedirect,
+  signInWithPopup,
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from 'firebase/auth';
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  setDoc,
+  collection,
+  writeBatch,
+  query,
+  getDocs,
+} from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDx9wH64xTQtJsn6BlaYr2inu24HTD2ayk",
-    authDomain: "magazin-haine-db.firebaseapp.com",
-    projectId: "magazin-haine-db",
-    storageBucket: "magazin-haine-db.appspot.com",
-    messagingSenderId: "91117402917",
-    appId: "1:91117402917:web:1b31afd953ef847411b8cc"
-  };
-  
+  apiKey: "AIzaSyDx9wH64xTQtJsn6BlaYr2inu24HTD2ayk",
+  authDomain: "magazin-haine-db.firebaseapp.com",
+  projectId: "magazin-haine-db",
+  storageBucket: "magazin-haine-db.appspot.com",
+  messagingSenderId: "91117402917",
+  appId: "1:91117402917:web:1b31afd953ef847411b8cc"
+};
+
 const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
@@ -58,13 +67,7 @@ export const getCategoriesAndDocuments = async () => {
   const q = query(collectionRef);
 
   const querySnapshot = await getDocs(q);
-  const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
-    const { title, items } = docSnapshot.data();
-    acc[title.toLowerCase()] = items;
-    return acc;
-  }, {});
-
-  return categoryMap;
+  return querySnapshot.docs.map((docSnapshot) => docSnapshot.data());
 };
 
 export const createUserDocumentFromAuth = async (
