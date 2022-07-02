@@ -46,8 +46,8 @@ const SignInForm = () => {
 
   return (
     <SignInContainer>
-      <h2>Already have an account?</h2>
-      <span>Sign in with your email and password</span>
+      <h2>Ai deja cont?</h2>
+      <span>Intră prin email și parolă</span>
       <form onSubmit={handleSubmit}>
         <FormInput
           label='Email'
@@ -67,13 +67,13 @@ const SignInForm = () => {
           value={password}
         />
         <ButtonsContainer>
-          <Button type='submit'>Sign In</Button>
+          <Button type='submit'>Intră</Button>
           <Button
             buttonType={BUTTON_TYPE_CLASSES.google}
             type='button'
             onClick={signInWithGoogle}
           >
-            Sign In With Google
+            Intră prin GOOGLE
           </Button>
         </ButtonsContainer>
       </form>

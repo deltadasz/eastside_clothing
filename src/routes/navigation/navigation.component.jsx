@@ -8,7 +8,7 @@ import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component
 import { selectCurrentUser } from '../../store/user/user.selector';
 import { selectIsCartOpen } from '../../store/cart/cart.selector';
 
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
+import { ReactComponent as CrwnLogo } from '../../assets/eastside_logo.svg';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
 import {
@@ -29,14 +29,14 @@ const Navigation = () => {
           <CrwnLogo className='logo' />
         </LogoContainer>
         <NavLinks>
-          <NavLink to='/shop'>SHOP</NavLink>
+          <NavLink to='/shop'>MAGAZIN</NavLink>
 
           {currentUser ? (
             <NavLink as='span' onClick={signOutUser}>
-              SIGN OUT
+              IEȘI DIN CONT
             </NavLink>
           ) : (
-            <NavLink to='/auth'>SIGN IN</NavLink>
+            <NavLink to='/auth'>INTRĂ ÎN CONT</NavLink>
           )}
           <CartIcon />
         </NavLinks>

@@ -22,25 +22,25 @@ const Checkout = () => {
     <CheckoutContainer>
       <CheckoutHeader>
         <HeaderBlock>
-          <span>Product</span>
+          <span>Produs</span>
         </HeaderBlock>
         <HeaderBlock>
-          <span>Description</span>
+          <span>Detalii</span>
         </HeaderBlock>
         <HeaderBlock>
-          <span>Quantity</span>
+          <span>Cantitate</span>
         </HeaderBlock>
         <HeaderBlock>
-          <span>Price</span>
+          <span>Preț</span>
         </HeaderBlock>
         <HeaderBlock>
-          <span>Remove</span>
+          <span>Șterge</span>
         </HeaderBlock>
       </CheckoutHeader>
       {cartItems.map((cartItem) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
-      <Total>Total: ${cartTotal}</Total>
+      <Total>Total: RON{cartTotal}</Total>
       <PaymentForm/>
     </CheckoutContainer>
   );

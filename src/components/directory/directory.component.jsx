@@ -5,33 +5,33 @@ import { DirectoryContainer } from './directory.styles';
 const categories = [
   {
     id: 1,
-    title: 'hats',
+    title: 'Șepci',
     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-    route: 'shop/hats',
+    route: 'shop/șepci',
   },
   {
     id: 2,
-    title: 'jackets',
+    title: 'Jachete',
     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-    route: 'shop/jackets',
+    route: 'shop/jachete',
   },
   {
     id: 3,
-    title: 'sneakers',
+    title: 'Pantofi',
     imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-    route: 'shop/sneakers',
+    route: 'shop/pantofi',
   },
   {
     id: 4,
-    title: 'womens',
+    title: 'Femei',
     imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-    route: 'shop/womens',
+    route: 'shop/femei',
   },
   {
     id: 5,
-    title: 'mens',
+    title: 'Bărbați',
     imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-    route: 'shop/mens',
+    route: 'shop/bărbați',
   },
 ];
 

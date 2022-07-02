@@ -58,11 +58,11 @@ const SignUpForm = () => {
 
   return (
     <SignUpContainer>
-      <h2>Don't have an account?</h2>
-      <span>Sign up with your email and password</span>
+      <h2>Nu ai cont?</h2>
+      <span>Înregistrază-tu cu email și parolă</span>
       <form onSubmit={handleSubmit}>
         <FormInput
-          label='Display Name'
+          label='Nume și Prenume'
           type='text'
           required
           onChange={handleChange}
@@ -80,7 +80,7 @@ const SignUpForm = () => {
         />
 
         <FormInput
-          label='Password'
+          label='Parolă'
           type='password'
           required
           onChange={handleChange}
@@ -89,14 +89,14 @@ const SignUpForm = () => {
         />
 
         <FormInput
-          label='Confirm Password'
+          label='Confirmă parola'
           type='password'
           required
           onChange={handleChange}
           name='confirmPassword'
           value={confirmPassword}
         />
-        <Button type='submit'>Sign Up</Button>
+        <Button type='submit'>Creează cont</Button>
       </form>
     </SignUpContainer>
   );

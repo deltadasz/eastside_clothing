@@ -58,9 +58,9 @@ const PaymentForm = () => {
     return (
         <PaymentFormContainer>
             <FormContainer onSubmit={paymentHandler}>
-            <h2>Credit Card Payment:</h2>
+            <h2>Detalii card:</h2>
             <CardElement/>
-            <PaymentButton isLoading={isProcessingPayment} buttonType={BUTTON_TYPE_CLASSES.inverted}>Pay Now</PaymentButton>
+            <PaymentButton isLoading={isProcessingPayment} buttonType={BUTTON_TYPE_CLASSES.inverted}>Plătește acum</PaymentButton>
             </FormContainer>
          </PaymentFormContainer>
     );
