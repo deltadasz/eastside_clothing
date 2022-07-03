@@ -6,31 +6,31 @@ const categories = [
   {
     id: 1,
     title: 'Șepci',
-    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+    imageUrl: 'https://i.im.ge/2022/07/02/uLQuk4.jpg',
     route: 'shop/șepci',
   },
   {
     id: 2,
     title: 'Jachete',
-    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+    imageUrl: 'https://i.im.ge/2022/07/02/uLQOFC.jpg',
     route: 'shop/jachete',
   },
   {
     id: 3,
     title: 'Pantofi',
-    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+    imageUrl: 'https://i.im.ge/2022/07/02/uLQ1jq.jpg',
     route: 'shop/pantofi',
   },
   {
     id: 4,
     title: 'Femei',
-    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+    imageUrl: 'https://i.im.ge/2022/07/02/uLQ0WL.jpg',
     route: 'shop/femei',
   },
   {
     id: 5,
     title: 'Bărbați',
-    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+    imageUrl: 'https://i.im.ge/2022/07/02/uLQijc.jpg',
     route: 'shop/bărbați',
   },
 ];
